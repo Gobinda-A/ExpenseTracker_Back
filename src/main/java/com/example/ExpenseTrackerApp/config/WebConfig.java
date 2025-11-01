@@ -20,7 +20,8 @@ public class WebConfig {
                                 "http://127.0.0.1:*",
                                 "http://192.168.137.1:*",
                                 "http://192.168.1.*:*",   // ✅ allow any device on your LAN
-                                "http://192.168.1.3:*"    // ✅ explicitly allow your laptop’s IP
+                                "http://192.168.1.3:*",    // ✅ explicitly allow your laptop’s IP
+                                "https://gobindaexpensetrackerapp.up.railway.app*"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowCredentials(true);
